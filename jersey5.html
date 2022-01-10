@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chelsea Kit</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container"> 
+<div class="navbar">
+    <div class="logo">
+        <a href = "index.html"><img src = "img/logo.png" width="125px"></a>
+    </div>
+    <nav>
+        <ul id = "MenuItems">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "product.html">Products</a></li>           
+            <li><a href = "account.html">Account</a></li>
+        </ul>
+    </nav>
+    <a href="cart.html"><img src="img/cart.png" width="30px" height="30px" /></a>
+    <img src = "img/menu.png" class = "menu-icon" onclick="menutoggle()">
+</div> 
+</div>
+
+
+<div class="small-container single-product">
+<div class="row">
+    <div class="col-2">
+        <img src="img/product6.jpg" width="100%" id = "productImg">
+        
+    </div>
+
+    </div>      
+    <div class="col-2">
+        <p>jersey </p>
+        <h1>chelsea jersey</h1><input type="text" id="name" hidden value="chelsea jersey">
+            <h4>$50.00</h4><input type="text" hidden value="50" id="price">
+            <input type="text" value="standard"id="size" hidden>
+<p>Size:Standard</p>			
+            <input type = "number" id="quantity" value = "1" min="1">
+            <Button class = "btn" onclick="addtocart()" >Add To Cart</button>
+            
+    </div>
+</div>
+</div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href = "http://www.facebook.com/">Facebook</a></li>
+                            <li><a href = "http://www.twitter.com/">Twitter</a></li>
+                            <li><a href = "http://www.instagram.com/">Instagram</a></li>
+                            <li><a href = "http://www.youtube.com/">Youtube</a></li>
+                        </ul>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+    </div>
+
+    
+
+</body>
+</html>     

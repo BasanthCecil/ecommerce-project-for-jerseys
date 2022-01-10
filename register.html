@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignmet3</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+	"use strict";
+        var $ = function (id) {return document.getElementById(id);};
+
+        var processEntries = function ()
+        {
+            var isValid = true;
+            var username= $("username").value;
+            var email =$("email1").value;
+            var email2 = $("email2").value;
+            var password1 = $("password1").value;
+            var password2 =$("password2").value;
+            var phone = $("phone").value;
+            if(email == "")
+            {
+                $("email1").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else{
+                $("email1").nextElementSibling.firstChild.nodeValue="";
+            }
+            if(email2 == "")
+            {
+                $("email2").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else if(email!=email2){
+                $("email2").nextElementSibling.firstChild.nodeValue="Your email didn't matched with above one";
+                isValid = false;
+            }
+            else{
+                $("email2").nextElementSibling.firstChild.nodeValue="";
+            }
+            if(password1 == "")
+            {
+                $("password1").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else{
+                $("password1").nextElementSibling.firstChild.nodeValue="";
+            }
+
+            if(password2 == "")
+            {
+                $("password2").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else if(password1!=password2){
+                $("password2").nextElementSibling.firstChild.nodeValue="Your password didn't matched with above one";
+                isValid = false;
+            }
+            else{
+                $("password2").nextElementSibling.firstChild.nodeValue="";
+            }
+
+            if(username == "")
+            {
+                $("username").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else{
+                $("username").nextElementSibling.firstChild.nodeValue="";
+            }
+            if(phone == "")
+            {
+                $("phone").nextElementSibling.firstChild.nodeValue ="Please fill out this form";
+                isValid = false;
+            }
+            else{
+                $("phone").nextElementSibling.firstChild.nodeValue="";
+            }
+
+            if (isValid==true){
+                $("registration_form").submit();
+					window.location.replace("index.html");
+				
+            }
+
+        };
+        window.onload = function ()
+        {
+            $("register").onclick = processEntries;
+        };
+	</script> 
+</head>
+<body>
+<div id="hell">
+    <h2>Registration Page</h2>
+	<div id="hi">
+<form action="register.html" method="get" name="registration_form" id="registration_form">
+    <table>
+    <tr><td><label>User Name </label></td><td><input type="text" name="username" id="username"><span>*</span></td></tr>
+    <tr><td><label>Email ID: </label></td><td><input type="email" name="email1" id="email1"><span>*</span></td></tr>
+    <tr><td><label>Re_Enter Email ID</label></td><td><input type="email" name="email2" id="email2"><span>*</span></td></tr>
+    <tr><td><label>Passsword:</label></td><td><input type="password" name="password1" id="password1"><span>*</span></td></tr>
+    <tr><td><label>Re_Enter Password:</label></td><td><input type="password" name="password2" id="password2"><span>*</span></td></tr>
+    <tr><td><label>Phone No.</label></td><td><input type="phone" name="phone" id="phone"><span>*</span></td></tr>
+    <tr><td colspan="2"><input type="submit" name="register" value="Register" id="register"/></td></tr>
+    <tr><td colspan="2"><label>Already have an account?<a href="account.html">Sign in</a></label></td></tr>
+	</table>
+</form>
+</div>
+</div>
+</body>
+</html>
