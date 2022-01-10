@@ -1,19 +1,5 @@
------>
-1st open - account.html- login using
-
-user name - admin
-password - admin
-
-user name - mani
-password - mani
-
-user name - cecil
-password - cecil
-
------->  browse jerseys, stockings , clcik on images of the jersey, will redirect you to main product page
-
-------> check the register page, all validations are completed
-
------->  cart page, yet to be completed.
-
-
+Read me is specific for the changes that you guys make in the jquery file
+- update your jquery file and hard code the values for login 
+- validations are added for the register page
+- images have to be added and the code should be updated based on image names after you dowload this project 
+- css files are also uploaded but the directory has tp be set accurately in the code
